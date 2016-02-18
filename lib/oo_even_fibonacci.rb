@@ -1,13 +1,11 @@
 class EvenFibonacci
 
-
-
   def initialize(int)
     @int = int
+    @fib_seq = [1, 2]
   end
 
   def sum
-    @fib_seq = [1, 2]
     last_2_sum = 3
     while last_2_sum <= @int
       @fib_seq.push(last_2_sum)
